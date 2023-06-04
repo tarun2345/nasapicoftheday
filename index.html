@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa picture of the day</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="entireDiv">
+        <section id="current-image-container" class="picSec">
+            <!--
+            <h1>Nasa Picture of the Day</h1>
+            <img src="./nasa1.jpeg" alt="picofday">
+            <h2>This is about the picture</h2>
+            -->
+        </section>
+        <div class="grid">
+            <div class="formConatiner">
+                <form id="search-form">
+                    <h3>Select a date :</h3>
+                    <input type="date" id="search-input">
+                    <div id="error" style="color: red;display: none;">Error : Please select a date</div>
+                    <div id="error2" style="color: red;display: none;">Error : Date should be selected between June 16 1995 and Today</div>
+                    <button id="search-btn">Search</button>
+                </form>
+            </div>
+            <div class="historyDiv">
+                <h3>Previous searches</h3>
+                <ul id="seach-history">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
